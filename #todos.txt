@@ -1,0 +1,41 @@
+[JUnit]
+- test private methods
+
+[AspectJ]
+- logging, param check
+
+[fast]
+- make each controller singleton
+- make getdescription, getcontent language-independent
+- irgendwas mit knopf halten bei < 1 event etc.
+- 1268311345948501724 als instantiation time
+
+[medium]
+- wasd on new frame
+- rotation around an axis in front of camera (follower)
+- category system for width/length (user-configurable thresholds)
+- TraceView: add class instance as node, too
+! fix: class is not always selected (only influenced by zooming -> java3d bug)
+! fix: without trace tail, remove method calls only
+- anfang / ende springen
+- "optimale zoomstufe" zum anfang so dass alles abgebildet ist
+- rework metric interface
+
+ok fix: trace view event selection is wrong
+ok fix: scroll bar of thread view
+ok fix: load statics & dynamics again
+
+[slow]
+- options window (e.g. time unit, metrics, snapshot format & quality) 
+- fix: local stepping with mixed ITraceElement types (instances & methods)
+- make past events transparent
+
+[slow - not that important]
+- save/load current view of statics (i.e. camera pos, object colors/selections, filters, current event)
+- make metrics user-definable
+- concept for texture in model
+- Collision
+- SharedGroup für Quader/Cylinder benutzen (increases performance)
+- dynamic layout changes (e.g. interspace, package border etc.)
+- filter events (make them transparent)
+- 

@@ -1,0 +1,25 @@
+[André fragen]
+- EntryPoint als ThreadLocal, sodass andere Probes nicht zwangsläufig EntryPoints sind (hatte iwas mit eoi zu tun)
+
+[Annahmen]
+- Mind. eine Methode wird vor Objektinstantiierung ausgeführt, wenn vollständig protokolliert wird (main), sonst interieren bis. 1 Methode
+- "Caller" ist die Klasse von eoi-1, damit auch bei unvollständiger Protokollierung ein vollständiger Pfad angezeigt werden kann
+- Für wirklich vollständige Protokollierung müssen einfach alle Methodenaufrufe (execution *.*(..)) aufgezeichnet werden
+- ordered-time nur bei nicht verteilten Systemen bzw. synchronen Uhrzeiten
+- PostProcessing, um rel. Dauer einer Methode zur obersten Methode berechnen zu können
+
+[Online-Vis]
+- anderer DynImporter (Statistik)
+- schreibt direkt ins SourceModel
+- Neusetzen der aktuellen Metriken
+~ 1 Floor pro Klasse im Voraus erzeugen
+- Interaktion mit der Szene ausgeschaltet
+- Auto-Layout-anpassung/gestaltung nicht möglich, da nicht bekannt ist, was alles noch wie oft aufgerufen wird
+
+[FeatureModel]
+- beschreibt die Abbildungskapazität/Darstellungsmöglichkeiten von DyVis
+
+[Overview]
+- oberste Übersicht muss bereits einen Nutzen haben, d.h. muss schon auf best. Dinge hinweisen können (sonst wäre eine Übersicht ja sinnlos)
+- Intuitives Zooming dorthin, wo sich der Mauszeiger befindet (vgl. Google Maps)
+- Level of Detail (LoD): nähere Sicht eröffnet/schließt andere Sichten

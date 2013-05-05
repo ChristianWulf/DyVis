@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<s:Package xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:s="www.chw-thesis-WS09.de" name="tseMyExample" filename="C:\Users\Nogge\workspace-bachelor\andré\src\tseMyExample">
+  <children xsi:type="s:Package" name="bookstore" filename="C:\Users\Nogge\workspace-bachelor\andré\src\tseMyExample\bookstore">
+    <children xsi:type="s:Class" name="Bookstore" filename="C:\Users\Nogge\workspace-bachelor\andré\src\tseMyExample\bookstore\Bookstore.java">
+      <attributes type="int" name="interRequestTime"/>
+      <attributes type="int" name="numberOfRequests"/>
+      <methods name="main"/>
+      <methods name="searchBook"/>
+      <methods name="waitabit" returnType=""/>
+      <methods name="run"/>
+    </children>
+    <children xsi:type="s:Class" name="Catalog" filename="C:\Users\Nogge\workspace-bachelor\andré\src\tseMyExample\bookstore\Catalog.java">
+      <methods name="getBook"/>
+    </children>
+    <children xsi:type="s:Class" name="CRM" filename="C:\Users\Nogge\workspace-bachelor\andré\src\tseMyExample\bookstore\CRM.java">
+      <methods name="getOffers"/>
+    </children>
+  </children>
+</s:Package>
