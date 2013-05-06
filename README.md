@@ -7,5 +7,11 @@ License
 Eclipse Public License - v 1.0 (http://www.eclipse.org/legal/epl-v10.html)
 
 Requirements
-===
+---
 - JRE 6 (DyVis uses some Java packages that were removed in JRE 7. I will fix this soon.)
+
+Compilation
+---
+If you get an access restriction for a particular library, do the following with it:
+1.) add the library
+2.) put the library at the top of the "Order and Export" tab in the project's build path
