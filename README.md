@@ -13,5 +13,6 @@ Requirements
 Compilation
 ---
 If you get an access restriction for a particular library, do the following with it:
-1.) add the library
-2.) put the library at the top of the "Order and Export" tab in the project's build path
+
+1. add the library
+2. put the library at the top of the "Order and Export" tab in the project's build path
