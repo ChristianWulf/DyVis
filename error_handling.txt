@@ -1,8 +1,0 @@
-Errors
-[Access restriction]
-1.) add library
-2.) put library at the top in "Order and Export"
-
-[Could not find main class]
-=> press Menu->Project->Clean...
-
