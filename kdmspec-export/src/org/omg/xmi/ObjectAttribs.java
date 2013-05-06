@@ -1,7 +1,6 @@
-
 package org.omg.xmi;
 
-import org.jibx.runtime.QName;
+import javax.xml.namespace.QName;
 
 /** 
  * Schema fragment(s) for this class:
