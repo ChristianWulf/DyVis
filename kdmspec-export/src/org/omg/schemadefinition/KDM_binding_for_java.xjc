@@ -1,0 +1,102 @@
+<jxb:bindings version="1.0" xmlns:jxb="http://java.sun.com/xml/ns/jaxb" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<jxb:bindings schemaLocation="KDM.kdmXMI.xsd">
+		<jxb:bindings node="//xs:complexType[@name='Stereotype']">
+			<jxb:bindings node=".//xs:attribute[@name='type']">
+				<jxb:property name="alt_type"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='TagDefinition']">
+			<jxb:bindings node=".//xs:attribute[@name='type']">
+				<jxb:property name="alt_type"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='TaggedRef']">
+			<jxb:bindings node=".//xs:attribute[@name='reference']">
+				<jxb:property name="alt_reference"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='ExtendedValue']">
+			<jxb:bindings node=".//xs:attribute[@name='tag']">
+				<jxb:property name="alt_tag"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="KDM.sourceXMI.xsd">
+		<jxb:bindings node="//xs:complexType[@name='InventoryItem']">
+			<jxb:bindings node=".//xs:attribute[@name='version']">
+				<jxb:property name="alt_version"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='SourceRegion']">
+			<jxb:bindings node=".//xs:attribute[@name='file']">
+				<jxb:property name="alt_file"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="KDM.codeXMI.xsd">
+		<jxb:bindings node="//xs:complexType[@name='NamespaceUnit']">
+			<jxb:bindings node=".//xs:attribute[@name='groupedCode']">
+				<jxb:property name="alt_groupedCode"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='DataElement']">
+			<jxb:bindings node=".//xs:attribute[@name='type']">
+				<jxb:property name="alt_type"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='DefinedType']">
+			<jxb:bindings node=".//xs:attribute[@name='type']">
+				<jxb:property name="alt_type"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='ControlElement']">
+			<jxb:bindings node=".//xs:attribute[@name='type']">
+				<jxb:property name="alt_type"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="KDM.platformXMI.xsd">
+		<jxb:bindings node="//xs:complexType[@name='DeployedComponent']">
+			<jxb:bindings node=".//xs:attribute[@name='groupedCode']">
+				<jxb:property name="alt_groupedCode"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='DeployedSoftwareSystem']">
+			<jxb:bindings node=".//xs:attribute[@name='groupedComponent']">
+				<jxb:property name="alt_groupedComponent"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="KDM.conceptualXMI.xsd">
+		<jxb:bindings node="//xs:complexType[@name='ConceptualRole']">
+			<jxb:bindings node=".//xs:attribute[@name='conceptualElement']">
+				<jxb:property name="alt_conceptualElement"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+
+	<jxb:bindings schemaLocation="KDM.dataXMI.xsd">
+		<jxb:bindings node="//xs:complexType[@name='SimpleContentType']">
+			<jxb:bindings node=".//xs:attribute[@name='type']">
+				<jxb:property name="alt_type"/>
+			</jxb:bindings>
+			<jxb:bindings node=".//xs:choice">
+				<jxb:property name="alt_type_choice"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='IndexElement']">
+			<jxb:bindings node=".//xs:attribute[@name='implementation']">
+				<jxb:property name="alt_implementation"/>
+			</jxb:bindings>
+		</jxb:bindings>
+		<jxb:bindings node="//xs:complexType[@name='ContentItem']">
+			<jxb:bindings node=".//xs:attribute[@name='type']">
+				<jxb:property name="alt_type"/>
+			</jxb:bindings>
+		</jxb:bindings>
+	</jxb:bindings>
+</jxb:bindings>

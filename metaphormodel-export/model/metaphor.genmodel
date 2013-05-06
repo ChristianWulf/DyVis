@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/MetaphorModel/src"
+    modelPluginID="MetaphorModel" modelName="Metaphor" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>metaphor.ecore</foreignModel>
+  <genPackages prefix="Metaphor" disposableProviderFactory="true" ecorePackage="metaphor.ecore#/">
+    <nestedGenPackages prefix="Visualization" disposableProviderFactory="true" ecorePackage="metaphor.ecore#//visualization">
+      <genClasses ecoreClass="metaphor.ecore#//visualization/District">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaphor.ecore#//visualization/District/subdistricts"/>
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metaphor.ecore#//visualization/District/buildings"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//visualization/District/altitude"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//visualization/District/contextTransformation"/>
+      </genClasses>
+      <genClasses ecoreClass="metaphor.ecore#//visualization/Street">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference metaphor.ecore#//visualization/Street/callerFloor"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference metaphor.ecore#//visualization/Street/calleeFloor"/>
+      </genClasses>
+      <genClasses ecoreClass="metaphor.ecore#//visualization/Building">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//visualization/Building/texture"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//visualization/Building/transparency"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//visualization/Building/height"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference metaphor.ecore#//visualization/Building/floors"/>
+      </genClasses>
+      <genClasses ecoreClass="metaphor.ecore#//visualization/Floor">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference metaphor.ecore#//visualization/Floor/building"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//visualization/Floor/height"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="DataTypes" disposableProviderFactory="true" ecorePackage="metaphor.ecore#//dataTypes">
+      <genDataTypes ecoreDataType="metaphor.ecore#//dataTypes/Position"/>
+      <genClasses ecoreClass="metaphor.ecore#//dataTypes/SceneElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//dataTypes/SceneElement/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//dataTypes/SceneElement/color"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//dataTypes/SceneElement/relPosition"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//dataTypes/SceneElement/absPosition"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//dataTypes/SceneElement/sceneObject"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//dataTypes/SceneElement/sourceObject"/>
+      </genClasses>
+      <genClasses ecoreClass="metaphor.ecore#//dataTypes/StaticElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//dataTypes/StaticElement/width"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metaphor.ecore#//dataTypes/StaticElement/length"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

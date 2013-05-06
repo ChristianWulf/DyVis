@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/FeatureModel/src"
+    modelPluginID="FeatureModel" modelName="Feature" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false">
+  <foreignModel>feature.ecore</foreignModel>
+  <genPackages prefix="Feature" disposableProviderFactory="true" ecorePackage="feature.ecore#/">
+    <nestedGenPackages prefix="Statics" basePackage="feature" disposableProviderFactory="true"
+        ecorePackage="feature.ecore#//statics">
+      <genClasses ecoreClass="feature.ecore#//statics/DPackage">
+        <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference feature.ecore#//statics/DPackage/subpackages"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//statics/DPackage/children"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//statics/DPackage/level"/>
+      </genClasses>
+      <genClasses ecoreClass="feature.ecore#//statics/DClass">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//statics/DClass/instances"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//statics/DClass/attributes"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//statics/DClass/methods"/>
+      </genClasses>
+      <genClasses ecoreClass="feature.ecore#//statics/DMethod">
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//statics/DMethod/instances"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//statics/DMethod/returnValue"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//statics/DMethod/parameters"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//statics/DMethod/parent"/>
+      </genClasses>
+      <genClasses ecoreClass="feature.ecore#//statics/DAttribute">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//statics/DAttribute/type"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//statics/DAttribute/value"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Dynamics" basePackage="feature" disposableProviderFactory="true"
+        ecorePackage="feature.ecore#//dynamics">
+      <genEnums typeSafeEnumCompatible="false" ecoreEnum="feature.ecore#//dynamics/InstanceAction">
+        <genEnumLiterals ecoreEnumLiteral="feature.ecore#//dynamics/InstanceAction/CREATE"/>
+        <genEnumLiterals ecoreEnumLiteral="feature.ecore#//dynamics/InstanceAction/DESTROY"/>
+      </genEnums>
+      <genClasses ecoreClass="feature.ecore#//dynamics/DClassInstance">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//dynamics/DClassInstance/action"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//dynamics/DClassInstance/objectID"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//dynamics/DClassInstance/parent"/>
+      </genClasses>
+      <genClasses ecoreClass="feature.ecore#//dynamics/DMethodInstance">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//dynamics/DMethodInstance/tout"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//dynamics/DMethodInstance/calleeId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//dynamics/DMethodInstance/ess"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//dynamics/DMethodInstance/parent"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//dynamics/DMethodInstance/callerClassInstance"/>
+        <genFeatures notify="false" createChild="false" propertySortChoices="true"
+            ecoreFeature="ecore:EReference feature.ecore#//dynamics/DMethodInstance/calleeClassInstance"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Common" basePackage="feature" disposableProviderFactory="true"
+        ecorePackage="feature.ecore#//common">
+      <genDataTypes ecoreDataType="feature.ecore#//common/StringArray"/>
+      <genClasses image="false" ecoreClass="feature.ecore#//common/ITraceElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/ITraceElement/tin"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/ITraceElement/traceId"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/ITraceElement/eoi"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="feature.ecore#//common/IComponent"/>
+      <genClasses image="false" ecoreClass="feature.ecore#//common/IInfoElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/IInfoElement/metaphorObject"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/IInfoElement/contents"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/IInfoElement/rowDescriptions"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="feature.ecore#//common/CodeElement">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/CodeElement/filename"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/CodeElement/name"/>
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//common/CodeElement/line"/>
+      </genClasses>
+    </nestedGenPackages>
+    <nestedGenPackages prefix="Metrics" basePackage="feature" disposableProviderFactory="true"
+        ecorePackage="feature.ecore#//metrics">
+      <genClasses image="false" ecoreClass="feature.ecore#//metrics/IStaticsMetric"/>
+      <genClasses image="false" ecoreClass="feature.ecore#//metrics/IDynamicsMetric"/>
+      <genClasses image="false" ecoreClass="feature.ecore#//metrics/NOAMetric">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//metrics/NOAMetric/noa"/>
+      </genClasses>
+      <genClasses image="false" ecoreClass="feature.ecore#//metrics/NOMMetric">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//metrics/NOMMetric/nom"/>
+      </genClasses>
+      <genClasses ecoreClass="feature.ecore#//metrics/PercentDurationMetric">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//metrics/PercentDurationMetric/durPercent"/>
+      </genClasses>
+      <genClasses ecoreClass="feature.ecore#//metrics/AbsoluteDurationMetric">
+        <genFeatures createChild="false" ecoreFeature="ecore:EAttribute feature.ecore#//metrics/AbsoluteDurationMetric/durAbsolute"/>
+      </genClasses>
+    </nestedGenPackages>
+  </genPackages>
+</genmodel:GenModel>

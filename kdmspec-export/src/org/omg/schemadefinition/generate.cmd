@@ -1,0 +1,1 @@
+xjc KDM.kdmXMI.xsd KDM.sourceXMI.xsd KDM.codeXMI.xsd KDM.platformXMI.xsd KDM.conceptualXMI.xsd KDM.dataXMI.xsd KDM.structureXMI.xsd -d ..\..\..\ -b KDM_binding_for_java.xjc
