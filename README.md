@@ -8,7 +8,8 @@ Eclipse Public License - v 1.0 (http://www.eclipse.org/legal/epl-v10.html)
 
 Requirements
 ---
-- JRE 6 (DyVis uses some Java packages that were removed in JRE 7. I will fix this soon.)
+- JRE 6 or 7
+- Java 3D native library 'j3dcore-ogl' (Included for Windows x64)
 
 Compilation
 ---
@@ -16,3 +17,17 @@ If you get an access restriction for a particular library in Eclipse, do the fol
 
 1. add the library
 2. put the library at the top of the "Order and Export" tab in the project's build path
+
+This inconvenience will be fixed in the near future.
+
+Execution
+---
+You need to add the native library 'j3dcore-ogl' to the PATH variable. For Windows x64, DyVis already contains the required DLL at
+~~~
+lib/java3d/j3dcore-ogl.dll
+~~~
+
+To temporarilly add the PATH variable for the time of execution only, you can set it in Eclipse's 'Run Configurations in the 'Environment' tab with the following path:
+~~~
+${project_loc}/lib/java3d
+~~~
