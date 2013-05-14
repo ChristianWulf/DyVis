@@ -27,7 +27,7 @@ You need to add the native library 'j3dcore-ogl' to the PATH variable. For Windo
 lib/java3d/j3dcore-ogl.dll
 ~~~
 
-To temporarily add the PATH variable for the time of execution only, you can set it in Eclipse's 'Run Configurations' in the 'Environment' tab with the following path:
+If you want to add the library to the PATH variable for the time of execution only, you can set it, e.g., in Eclipse's 'Run Configurations' in the 'Environment' tab with the following path:
 ~~~
 ${project_loc}/lib/java3d
 ~~~
